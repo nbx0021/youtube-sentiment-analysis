@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Analysis Results</title>
+</head>
+<body>
+    <h1>Analysis Results</h1>
+    <div>
+        <h2>Comment Categories:</h2>
+        <ul>
+            <li>Good Comments: {{ analysis['Good Comments'] }}</li>
+            <li>Bad Comments: {{ analysis['Bad Comments'] }}</li>
+            <li>Neutral Comments: {{ analysis['Neutral Comments'] }}</li>
+        </ul>
+    </div>
+    <div>
+        <h2>Comment Analysis Chart:</h2>
+        <img src="/static/analysis.png" alt="Analysis Chart">
+    </div>
+
+    <link rel="stylesheet" type="text/css" href="/static/results.css">
+
+</body>
+</html>
